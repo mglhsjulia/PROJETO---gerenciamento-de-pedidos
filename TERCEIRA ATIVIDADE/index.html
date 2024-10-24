@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/I (1).png" alt="Logo da Lanchonete">
+        </div>
+        <h1>Dona Júlia Lanches</h1>
+    </header>
+
+    <main>
+        <section id="funcionario-section">
+            <h2>Cadastro de Funcionário</h2>
+            <form id="cadastro-funcionario">
+                <label for="nome-funcionario">Nome:</label>
+                <input type="text" id="nome-funcionario" required>
+                
+                <label for="cpf-funcionario">CPF:</label>
+                <input type="text" id="cpf-funcionario" maxlength="11" required>
+
+                <button type="submit">Cadastrar Funcionário</button>
+            </form>
+        </section>
+
+        <section id="pedido-section">
+            <h2>Cadastro de Pedido</h2>
+            <form id="cadastro-pedido">
+                <label for="nome-pedido">Nome do Pedido:</label>
+                <input type="text" id="nome-pedido" required>
+
+                <label for="descricao-pedido">Descrição:</label>
+                <input type="text" id="descricao-pedido" required>
+
+                <label for="funcionario-responsavel">Funcionário Responsável:</label>
+                <select id="funcionario-responsavel" required></select>
+
+                <label for="status-pedido">Status:</label>
+                <select id="status-pedido" required>
+                    <option value="A Fazer">A Fazer</option>
+                    <option value="Fazendo">Fazendo</option>
+                    <option value="Pronto para Entrega">Pronto para Entrega</option>
+                </select>
+
+                <button type="submit">Cadastrar Pedido</button>
+            </form>
+        </section>
+
+        <section id="listagem-pedidos">
+            <h2>Lista de Pedidos</h2>
+            <label for="filtro-status">Filtrar por Status:</label>
+            <select id="filtro-status">
+                <option value="">Todos</option>
+                <option value="A Fazer">A Fazer</option>
+                <option value="Fazendo">Fazendo</option>
+                <option value="Pronto para Entrega">Pronto para Entrega</option>
+            </select>
+            <div id="lista-pedidos"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

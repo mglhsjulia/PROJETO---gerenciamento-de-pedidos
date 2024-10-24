@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff9db;
+    color: #333;
+}
+
+header {
+    background-color: #f44336;
+    padding: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    color: #ffeb3b;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.logo {
+    position: absolute;
+    right: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+
+main {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 800px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    margin-bottom: 20px;
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+#listagem-pedidos {
+    margin-top: 20px;
+}
+
+#lista-pedidos div {
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
